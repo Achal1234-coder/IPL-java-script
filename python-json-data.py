@@ -33,7 +33,7 @@ def question1():
 
     question1_json_object = json.dumps(teams_run, indent=4)
 
-    with open("json/question1.json", "w") as outfile:
+    with open("json-files/question1.json", "w") as outfile:
         outfile.write(question1_json_object)
 
 
@@ -56,11 +56,10 @@ def question2():
         sort_batsman.reverse()
         sort_batsman = [(value, key) for key, value in sort_batsman]
         batsman_of_RCB = dict(sort_batsman[:20])
-        print(batsman_of_RCB)
 
     question2_json_object = json.dumps(batsman_of_RCB, indent=4)
 
-    with open("json/question2.json", "w") as outfile:
+    with open("json-files/question2.json", "w") as outfile:
         outfile.write(question2_json_object)
 
 
@@ -98,7 +97,7 @@ def question3():
 
     question3_json_object = json.dumps(no_of_umpire, indent=4)
 
-    with open("json/question3.json", "w") as outfile:
+    with open("json-files/question3.json", "w") as outfile:
         outfile.write(question3_json_object)
 
 
@@ -133,7 +132,7 @@ def question4():
 
     question4_json_object = json.dumps(match_byteam_byseas)
 
-    with open("json/question4.json", "w") as outfile:
+    with open("json-files/question4.json", "w") as outfile:
         outfile.write(question4_json_object)
 
 
